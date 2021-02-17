@@ -37,21 +37,17 @@ class Player {
             System.err.println("bombDir: " + bombDir);
 
             if (bombDir.contains("U")) {
-                System.err.println("contains 'U'...");
                 yMax = Y0;
                 Y0 = (Y0 + yMin) / 2;
             } else if (bombDir.contains("D")) {
-                System.err.println("contains 'D'...");
                 yMin = Y0;
                 Y0 = (Y0 + yMax) / 2;
             }
 
             if (bombDir.contains("R")) {
-                System.err.println("contains 'R'...");
                 xMin = X0;
                 X0 = (X0 + xMax) / 2;
             } else if (bombDir.contains("L")) {
-                System.err.println("contains 'L'...");
                 xMax = X0;
                 X0 = (X0 + xMin) / 2;
             }
